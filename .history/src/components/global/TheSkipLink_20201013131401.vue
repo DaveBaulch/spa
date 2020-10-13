@@ -9,15 +9,13 @@
   </a>
 </template>
 
-
-
 <style scoped lang="scss">
-@import '../../assets/sass/utilities/_mixins.scss';
 @import '../../assets/sass/utilities/_variables.scss';
 
 .skip-link {
   padding: 0.5rem 1rem 1rem 1rem;
   background-color: $white;
+  display: block;
   position: absolute;
   top: -100%;
   left: 2px;
@@ -27,10 +25,9 @@
 
   &:focus {
     top: 2px;
-    transition: $transition-speed-medium ease all;
+    transition: $transition-speed-fast ease all;
     color: $black;
   }
-
   @include breakpoint(md) {
     display: flex;
   }  

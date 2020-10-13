@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <TheSkipLink>
-      Skip navigation
+      <p>Skip navigation</p>
     </TheSkipLink>
     <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
     <TheSidenav
       :show="displaySidenav"
-      @close="displaySidenav = false">
+      @close="displaySidenav = false" />
     </TheSidenav>
 
     <main class="main" id="main">

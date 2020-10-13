@@ -21,9 +21,9 @@ export default {
       this.scrollPosition = window.scrollY
       console.log(this.scrollPosition)
       if ( this.scrollPosition > 100 ){
-        this.buttonVisible = true;
+        this.buttonVisible === true;
       } else {
-        this.buttonVisible = false;
+        this.buttonVisible === false;
       }
     }    
   },

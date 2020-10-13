@@ -1,5 +1,5 @@
 <template>
-  <a class="btn-scroll-top" :class="{ active: buttonVisible }" ref="scroll-button" id="scroll-top" href="#skip-navigation" v-scroll-to="{el: '#skip-navigation', onDone: onDone}">
+  <a class="btn-scroll-top" v-if="buttonVisible" ref="scroll-button" id="scroll-top" href="#skip-navigation" v-scroll-to="{el: '#skip-navigation', onDone: onDone}">
     <slot />
   </a>
 </template>
@@ -50,7 +50,7 @@ export default {
   color: $white;
   background-color: $white;
   border: 1px solid $grey-dark;;
-  opacity: 0;
+  // opacity: 0;
   transition: 300ms ease all;
   display: flex;
   align-items: center;
@@ -62,9 +62,9 @@ export default {
     display: flex;
   }
 
-  &.active {
-    opacity: 0.9;
-  }
+//   &.is-active {
+//     opacity: 0.9;
+//   }
 }
 
 </style>

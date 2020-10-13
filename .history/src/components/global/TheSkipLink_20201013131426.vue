@@ -9,8 +9,6 @@
   </a>
 </template>
 
-
-
 <style scoped lang="scss">
 @import '../../assets/sass/utilities/_mixins.scss';
 @import '../../assets/sass/utilities/_variables.scss';
@@ -27,7 +25,7 @@
 
   &:focus {
     top: 2px;
-    transition: $transition-speed-medium ease all;
+    transition: $transition-speed-fast ease all;
     color: $black;
   }
 

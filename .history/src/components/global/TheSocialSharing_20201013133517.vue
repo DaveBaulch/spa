@@ -36,7 +36,7 @@ import TheSocialSharingItem from "@/components/global/TheSocialSharingItem";
 export default {
   name: "TheSocialSharing",
   components: {
-    TheSocialSharingItem
+    TheSocialSharingItem,
   }
 };
 </script>

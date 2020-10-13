@@ -27,7 +27,7 @@
 
   &:focus {
     top: 2px;
-    transition: $transition-speed-medium ease all;
+    transition: $transition-speed-slow ease all;
     color: $black;
   }
 

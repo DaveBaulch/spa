@@ -20,8 +20,9 @@ export default {
     updateScroll() {
       this.scrollPosition = window.scrollY
       console.log(this.scrollPosition)
-      if ( this.scrollPosition > 100 ){
+      if ( this.scrollPosition > 10 ){
         this.buttonVisible = true;
+        console.log('true');
       } else {
         this.buttonVisible = false;
       }

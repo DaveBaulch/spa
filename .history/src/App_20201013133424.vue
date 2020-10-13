@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TheSkipLink>
-      Skip navigation
+      <p>Skip navigation</p>
     </TheSkipLink>
     <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
     <TheSidenav
