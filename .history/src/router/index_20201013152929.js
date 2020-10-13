@@ -18,7 +18,7 @@ const routes = [
     name: "About",
     meta: {
       title: 'About Page - Example SPA'
-    },   
+    }    
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -29,12 +29,6 @@ const routes = [
 
 const router = new VueRouter({
   routes
-});
-
-router.afterEach((to) => {
-  Vue.nextTick( () => {
-    document.title = to.meta.title ? to.meta.title : 'default title';
-  });
 });
 
 export default router;

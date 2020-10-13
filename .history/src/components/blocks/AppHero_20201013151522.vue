@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import BaseLink from '@/components/ui/BaseLink';
+import BaseLinkButton from '@/components/ui/BaseLink';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 
 export default {

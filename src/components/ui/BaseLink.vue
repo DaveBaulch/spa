@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'BaseLinkButton',
+  name: 'BaseLink',
   props: {
     type: {
       type: String,
