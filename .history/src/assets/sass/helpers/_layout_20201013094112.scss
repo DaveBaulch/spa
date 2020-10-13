@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  border: 1px solid #f0f;
+
+  @include breakpoint(sm) {
+    padding: 0 25px;
+  }  
+
+  @include breakpoint(md) {
+    padding: 0 30px;
+  }
+}
+
+
+.row {
+  border: 1px solid lime;
+}

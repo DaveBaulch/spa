@@ -1,0 +1,28 @@
+button {
+  cursor: pointer;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  pointer-events: none;
+
+  &:not([src]) {
+    visibility: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul:not([class]) {
+  list-style: disc;
+  // @include list;
+}
+
+ol:not([class]) {
+  list-style: decimal;
+}
+  
