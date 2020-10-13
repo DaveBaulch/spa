@@ -35,8 +35,9 @@
 
        <BaseLinkButton
         :text="btnText"
-        to="/about"
-        type="router-link"
+        to="http:www.davebaulch.co.uk"
+        internalUrl=true
+        openInCurrentTab
        />
 
       </div>

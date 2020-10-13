@@ -1,9 +1,9 @@
 <template>
-  <button
+  <component
+    :is="type"
     class="button"
-    :class="btnStyle"
-  ><slot /></button>
-</template>
+  ><slot />
+</component>
 
 <script>
 export default {

@@ -36,7 +36,7 @@
        <BaseLinkButton
         :text="btnText"
         to="/about"
-        type="router-link"
+        type="link"
        />
 
       </div>

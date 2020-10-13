@@ -11,7 +11,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'router-link'
+      default: null
     },    
     text: {
       type: String,

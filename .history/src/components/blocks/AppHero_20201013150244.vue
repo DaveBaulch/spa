@@ -35,8 +35,8 @@
 
        <BaseLinkButton
         :text="btnText"
-        to="/about"
-        type="router-link"
+        to="http:www.davebaulch.co.uk"
+        type="link"
        />
 
       </div>

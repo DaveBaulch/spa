@@ -1,7 +1,7 @@
 <template>
 
   <router-link v-if="type==='router-link'" :to="to"  class="button">{{ text }}</router-link>
-  <a v-else-if="type ==='link'" :href="to"  class="button">{{ text }}</a>
+  <a v-else-if="type ==='link'" :href="url"  class="button">{{ text }}</a>
 
 </template>
 
@@ -11,7 +11,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'router-link'
+      default: null
     },    
     text: {
       type: String,

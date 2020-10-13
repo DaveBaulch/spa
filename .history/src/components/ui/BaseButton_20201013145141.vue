@@ -1,9 +1,10 @@
 <template>
-  <button
+  <component
+    :is="type"
+    v-bind="typeProps"
     class="button"
-    :class="btnStyle"
-  ><slot /></button>
-</template>
+  ><slot />
+</component>
 
 <script>
 export default {

@@ -1,29 +1,29 @@
 <template>
-
-  <router-link v-if="type==='router-link'" :to="to"  class="button">{{ text }}</router-link>
-  <a v-else-if="type ==='link'" :href="to"  class="button">{{ text }}</a>
-
+  <component
+      :is="type"
+      v-bind="typeProps"
+      class="button"
+      :href="url"
+    >{{ text }}
+  </component>
 </template>
 
 <script>
 export default {
   name: 'BaseLinkButton',
   props: {
-    type: {
-      type: String,
-      default: 'router-link'
-    },    
     text: {
       type: String,
       default: '',
       required: true
     },
-    to: {
+    url: {
       type: String,
       default: '',
       required: true
-    }
-  } 
+    },
+
+  }
 }
 </script>
 

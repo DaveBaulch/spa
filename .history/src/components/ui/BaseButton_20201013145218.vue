@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'BaseButton',
+  name: 'TheSocialSharingItem',
   props: {
     text: {
       type: String,

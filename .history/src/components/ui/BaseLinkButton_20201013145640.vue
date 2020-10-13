@@ -1,17 +1,20 @@
 <template>
-
-  <router-link v-if="type==='router-link'" :to="to"  class="button">{{ text }}</router-link>
-  <a v-else-if="type ==='link'" :href="to"  class="button">{{ text }}</a>
-
+  <component
+      :is="type"
+      v-bind="typeProps"
+      class="button"
+      :href="url"
+    >{{ text }}
+  </component>
 </template>
 
 <script>
 export default {
   name: 'BaseLinkButton',
   props: {
-    type: {
+    text: {
       type: String,
-      default: 'router-link'
+      default: null
     },    
     text: {
       type: String,
@@ -22,8 +25,25 @@ export default {
       type: String,
       default: '',
       required: true
+    },
+
+  },
+
+  computed: {
+    type() {
+      return this.to ? 'nuxt-link' : 'a';
+    },
+
+    typeProps() {
+      return this.to
+        ? {
+            to: this.to,
+            tag: 'a',
+            replace: true
+          }
+        : null;
     }
-  } 
+  }  
 }
 </script>
 
