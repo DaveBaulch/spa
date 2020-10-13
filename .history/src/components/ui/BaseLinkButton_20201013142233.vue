@@ -1,12 +1,13 @@
 <template>
-  <button
+  <a
     class="button"
-  ><slot /></button>
+    :href="url"
+  ><slot /></a>
 </template>
 
 <script>
 export default {
-  name: 'BaseButton',
+  name: 'BaseLinkButton',
   props: {
     text: {
       type: String,
@@ -24,5 +25,7 @@ export default {
 
 
 <style scoped>
-
+  .button {
+    border: 1px solid $black;
+  }
 </style>

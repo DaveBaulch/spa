@@ -26,17 +26,18 @@
         <div class="banner__inner">
           <h1 class="banner__heading">Hero title</h1>
 
-          <div class="banner__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
+          <p class="banner__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
             ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
-            exercitationem itaque incidunt.</p>
-          </div>
+            exercitationem itaque incidunt.
+          </p>
         </div>
 
        <BaseLinkButton
         text="Link text"
         url="http:www.davebaulch.co.uk"
-       />
+       >
+       </BaseLinkButton>
 
       </div>
 

@@ -1,6 +1,7 @@
 <template>
   <button
     class="button"
+    :class="btnStyle"
   ><slot /></button>
 </template>
 

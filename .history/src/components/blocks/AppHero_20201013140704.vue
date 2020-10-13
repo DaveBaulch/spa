@@ -21,22 +21,23 @@
       ></span>
     </div>
 
-    <div class="container">
+    <div class="container-fluid container-fluid--contained">
       <div class="banner__content">
         <div class="banner__inner">
-          <h1 class="banner__heading">Hero title</h1>
+          <h2 class="banner__heading"><span class="text-background">General image promo title</span></h2>
 
-          <div class="banner__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
-            ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
-            exercitationem itaque incidunt.</p>
-          </div>
+          <p class="banner__text">
+            <span class="text-background"
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
+              ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
+              exercitationem itaque incidunt.</span
+            >
+          </p>
         </div>
 
-       <BaseLinkButton
-        text="Link text"
-        url="http:www.davebaulch.co.uk"
-       />
+       <BaseLinkButton>
+          Link text
+       </BaseLinkButton>
 
       </div>
 
@@ -63,44 +64,6 @@ export default {
 };
 </script>
 
-
-<style scoped lang="scss">
-@import '../../assets/sass/utilities/_variables.scss';
-@import '../../assets/sass/utilities/_mixins.scss';
-
-.banner {
-  position: relative;
-  background-color: $grey-light;
-
-  .container {
-    width: auto;
-    position: relative;
-  }
-}
-
-.banner__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.banner__content {
-  text-align: center;
-  padding: 4rem 1rem;
-
-  @include breakpoint(lg) {
-    padding: 8rem 1rem;
-  }
-}
-
-.banner__inner {
-  margin-bottom: 3rem;
-  background-color: $white;
-  padding: 2rem;
-  color: $black;
-}
+<style scoped>
 
 </style>

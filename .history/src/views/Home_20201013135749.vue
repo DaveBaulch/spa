@@ -1,15 +1,12 @@
 <template>
+  <AppHero />
+  <div class="container home">
+    <h1>Home page</h1>
 
-  <div>
-    <AppHero />
-    <div class="container home">
-      
-      <h1>Home page</h1>
-      <h2>Components</h2>
-    </div>]
+    <h2>Components</h2>
+
 
   </div>
-
 </template>
 
 <script>

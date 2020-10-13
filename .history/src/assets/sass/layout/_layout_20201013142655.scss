@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  // border: 1px solid #f0f;
+  padding: 0 15px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;  
+  // border: 1px solid lime;
+}
+
+.main {
+  // min-height: 800px;
+}
+
+// picturefill-background background images
+.picturefill-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 2s ease;
+
+  &.is-lazy {
+    opacity: 0;
+  }
+}

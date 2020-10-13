@@ -26,17 +26,18 @@
         <div class="banner__inner">
           <h1 class="banner__heading">Hero title</h1>
 
-          <div class="banner__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
+          <p class="banner__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
             ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
-            exercitationem itaque incidunt.</p>
-          </div>
+            exercitationem itaque incidunt.
+          </p>
         </div>
 
        <BaseLinkButton
         text="Link text"
         url="http:www.davebaulch.co.uk"
-       />
+       >
+       </BaseLinkButton>
 
       </div>
 
@@ -73,8 +74,8 @@ export default {
   background-color: $grey-light;
 
   .container {
-    width: auto;
     position: relative;
+    z-index: 100;
   }
 }
 
@@ -89,7 +90,7 @@ export default {
 
 .banner__content {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 4rem 0;
 
   @include breakpoint(lg) {
     padding: 8rem 1rem;
@@ -102,5 +103,16 @@ export default {
   padding: 2rem;
   color: $black;
 }
+
+.banner__btn {
+  width: 100%;
+
+  @include breakpoint(md) {
+    min-width: 300px;
+    width: auto;
+  }
+}
+
+
 
 </style>

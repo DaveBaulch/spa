@@ -1,12 +1,14 @@
 <template>
   <button
     class="button"
+    :class="btnStyle"
+    :href="url"
   ><slot /></button>
 </template>
 
 <script>
 export default {
-  name: 'BaseButton',
+  name: 'BaseButtonLink',
   props: {
     text: {
       type: String,

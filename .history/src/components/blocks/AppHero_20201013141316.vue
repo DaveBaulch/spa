@@ -24,19 +24,22 @@
     <div class="container">
       <div class="banner__content">
         <div class="banner__inner">
-          <h1 class="banner__heading">Hero title</h1>
+          <h1 class="banner__heading"><span class="banner__heading-background">Hero title</span></h1>
 
-          <div class="banner__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
-            ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
-            exercitationem itaque incidunt.</p>
-          </div>
+          <p class="banner__text">
+            <span class="text-background"
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro
+              ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad
+              exercitationem itaque incidunt.</span
+            >
+          </p>
         </div>
 
        <BaseLinkButton
         text="Link text"
         url="http:www.davebaulch.co.uk"
-       />
+       >
+       </BaseLinkButton>
 
       </div>
 
@@ -72,9 +75,45 @@ export default {
   position: relative;
   background-color: $grey-light;
 
-  .container {
-    width: auto;
+  .container-fluid {
     position: relative;
+    z-index: $z-index-image-promo-container;
+  }
+}
+
+.banner__content {
+  text-align: center;
+  padding: 4rem 0;
+
+  @include breakpoint(lg) {
+    padding: 8rem 10%;
+  }
+}
+
+.banner__inner {
+  margin-bottom: 3rem;
+}
+
+.banner__header {
+  .text-background {
+    @include text-background();
+    color: $black;
+  }
+}
+
+.banner__text {
+  .text-background {
+    @include text-background();
+    color: $black;
+  }
+}
+
+.banner__btn {
+  width: 100%;
+
+  @include breakpoint(md) {
+    min-width: 300px;
+    width: auto;
   }
 }
 
@@ -85,22 +124,11 @@ export default {
   width: 100%;
   height: 100%;
   background-size: cover;
+  z-index: 100$z-index-image-promo;
 }
 
-.banner__content {
-  text-align: center;
-  padding: 4rem 1rem;
-
-  @include breakpoint(lg) {
-    padding: 8rem 1rem;
-  }
-}
-
-.banner__inner {
-  margin-bottom: 3rem;
+.banner__heading-background {
   background-color: $white;
   padding: 2rem;
-  color: $black;
 }
-
 </style>
