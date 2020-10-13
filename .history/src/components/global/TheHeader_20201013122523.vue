@@ -1,15 +1,15 @@
 <template>
 <div class="header-container">
   <div class="container">
-    <header class="header">
+    <header class="the-header">
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <router-link to="/">Home</router-link> |
       </div>
       <div class="navigation-items">
         <ul class="nav-list">
-          <router-link to="/" class="nav-list__item">Home</router-link> |
-          <router-link to="/about" class="nav-list__item">About</router-link>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link>
         </ul>
       </div>
     </header>
@@ -34,30 +34,35 @@ export default {
 
 
 .header-container {
-  width: 100%;
   height: 60px;
   background-color: $black;
   position: fixed;
-  z-index: 100;
 
   @include breakpoint(md) {
     position: relative;
   }
 }
 
-.header {
+.the-header {
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $black;
+  z-index: 100;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 20px;
+}
+
+@include breakpoint(md) {
+  .the-header {
+    position: relative;
+  }
 }
 
 .logo {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 1.3rem;
 }
 
@@ -68,12 +73,13 @@ export default {
 
 .navigation-items {
   display: none;
+}
 
-  @include breakpoint(md) {
+@include breakpoint(md) {
+  .navigation-items {
     display: block;
   }
 }
-
 
 .nav-list {
   list-style: none;
@@ -82,7 +88,7 @@ export default {
   display: flex;
 }
 
-.nav-list__item {
+.nav-item {
   margin: 0 10px;
 }
 

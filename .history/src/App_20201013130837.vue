@@ -10,6 +10,7 @@
     <nuxt/>
 
     <main class="main" id="main">
+      main content here
       <router-view />
     </main>
 

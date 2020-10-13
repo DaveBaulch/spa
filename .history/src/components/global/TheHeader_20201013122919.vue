@@ -53,11 +53,11 @@ export default {
   align-items: center;
   background-color: $black;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .logo {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 1.3rem;
 }
 
@@ -70,7 +70,9 @@ export default {
   display: none;
 
   @include breakpoint(md) {
-    display: block;
+    .navigation-items {
+      display: block;
+    }
   }
 }
 
@@ -86,7 +88,7 @@ export default {
   margin: 0 10px;
 }
 
-.nav-item a {
+.nav-list__item a {
   text-decoration: none;
   color: $white;
 }

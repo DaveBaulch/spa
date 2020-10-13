@@ -57,7 +57,7 @@ export default {
 }
 
 .logo {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 1.3rem;
 }
 

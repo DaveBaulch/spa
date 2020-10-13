@@ -1,9 +1,10 @@
 <template>
   <div class="container home">
+    <!-- <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <h1>Home page</h1>
 
     <h2>Components</h2>
-
 
   </div>
 </template>

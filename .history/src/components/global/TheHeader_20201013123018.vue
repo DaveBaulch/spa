@@ -53,11 +53,11 @@ export default {
   align-items: center;
   background-color: $black;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .logo {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 1.3rem;
 }
 

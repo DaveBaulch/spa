@@ -10,7 +10,6 @@ import VueScrollTo from 'vue-scrollto';
 Vue.config.productionTip = false;
 Vue.use(GlobalStyles)
 Vue.use(SASStyles)
-Vue.use(VueScrollTo)
 
 new Vue({
   router,

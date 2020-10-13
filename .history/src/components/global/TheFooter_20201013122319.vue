@@ -271,7 +271,7 @@ footer-wrapper {
   grid-column: 1 / 13;
 
   @include breakpoint(lg) {
-    grid-column: 1 / 4;
+    grid-column: 4 / 13;
   }
 }
 
@@ -291,7 +291,6 @@ footer-wrapper {
   @include breakpoint(lg) {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
   }
 }
 

@@ -46,12 +46,13 @@ export default {
 
   @include breakpoint(md) {
     bottom: 85px;
-    display: flex;
+    displayL: block;
   }
 
-//   &.is-active {
-//     opacity: 0.9;
-//   }
+  &.is-active {
+    opacity: 0.9;
+  }
+ 
 }
 
 </style>

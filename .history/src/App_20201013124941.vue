@@ -16,7 +16,7 @@
     <TheFooter />
 
     <TheScrollTopButton>
-      <img src="@/assets/images/svg/chevron-up-white.svg" />
+      <img src="@/assets/images/svg/chevron-up-white.svg" class="btn-scroll-top__icon" />
       <span class="sr-only">Back to top</span>
     </TheScrollTopButton>
 

@@ -46,7 +46,7 @@ export default {
 
   @include breakpoint(md) {
     bottom: 85px;
-    display: flex;
+    display: block;
   }
 
 //   &.is-active {

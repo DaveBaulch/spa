@@ -291,7 +291,6 @@ footer-wrapper {
   @include breakpoint(lg) {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
   }
 }
 

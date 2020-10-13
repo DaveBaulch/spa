@@ -8,8 +8,8 @@
       </div>
       <div class="navigation-items">
         <ul class="nav-list">
-          <router-link to="/" class="nav-list__item">Home</router-link> |
-          <router-link to="/about" class="nav-list__item">About</router-link>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link>
         </ul>
       </div>
     </header>
@@ -53,11 +53,11 @@ export default {
   align-items: center;
   background-color: $black;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .logo {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 1.3rem;
 }
 
@@ -70,7 +70,9 @@ export default {
   display: none;
 
   @include breakpoint(md) {
-    display: block;
+    .navigation-items {
+      display: block;
+    }
   }
 }
 
@@ -82,7 +84,7 @@ export default {
   display: flex;
 }
 
-.nav-list__item {
+.nav-item {
   margin: 0 10px;
 }
 

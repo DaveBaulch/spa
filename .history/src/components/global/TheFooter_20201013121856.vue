@@ -7,7 +7,7 @@
 
           <div class="row">
 
-            <div class="footer__col footer__col--1">
+            <div class="footer__col footer_col--1">
 
               <div class="footer__sub1">
                 <h2>Contact Us</h2>
@@ -175,7 +175,7 @@ footer-wrapper {
   background-color: $grey-lighter;
 }
 
-.footer {
+.footer-primary {
   margin: 0 auto;
   padding: 3rem 0;
 }
@@ -267,14 +267,6 @@ footer-wrapper {
   }
 }
 
-.copyright-notice-wrapper{
-  grid-column: 1 / 13;
-
-  @include breakpoint(lg) {
-    grid-column: 1 / 4;
-  }
-}
-
 
 .footer-links-wrapper {
   grid-column: 1 / 13;
@@ -291,7 +283,6 @@ footer-wrapper {
   @include breakpoint(lg) {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
   }
 }
 

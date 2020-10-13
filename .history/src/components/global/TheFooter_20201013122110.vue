@@ -267,14 +267,6 @@ footer-wrapper {
   }
 }
 
-.copyright-notice-wrapper{
-  grid-column: 1 / 13;
-
-  @include breakpoint(lg) {
-    grid-column: 1 / 4;
-  }
-}
-
 
 .footer-links-wrapper {
   grid-column: 1 / 13;
@@ -291,7 +283,6 @@ footer-wrapper {
   @include breakpoint(lg) {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
   }
 }
 
