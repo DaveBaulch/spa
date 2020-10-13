@@ -109,10 +109,10 @@ export default {
 
 .banner__content {
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 
   @include breakpoint(lg) {
-    padding: 8rem 0;
+    padding: 8rem 1rem;
   }
 }
 

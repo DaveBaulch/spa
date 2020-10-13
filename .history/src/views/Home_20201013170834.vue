@@ -9,7 +9,11 @@
       btnText="Click me"
     />
 
-    <AppCarousel />
+    <AppCarousel 
+      btnText1="Click me1"
+      btnText2="Click me2"
+      btnText3="Click me3"
+    />
 
 
     <div class="container home">

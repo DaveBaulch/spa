@@ -24,13 +24,11 @@
 <script>
 // @ is an alias to /src
 import AppHero from "@/components/blocks/AppHero.vue";
-import AppCarousel from "@/components/blocks/AppCarousel.vue";
 
 export default {
   name: "Home",
   components: {
-    AppHero,
-    AppCarousel
+    AppHero
   }
 };
 </script>
