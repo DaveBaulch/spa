@@ -7,7 +7,8 @@
     </div>
 
     <div class="container">
-      <h2>Hero banner</h2>
+      <h2>Components</h2>
+      <h3>Hero banner</h3>
     </div>
 
     <AppHero 
@@ -19,7 +20,7 @@
     />      
 
     <div class="container">
-      <h2>Carousel</h2>
+      <h3>Carousel</h3>
     </div>      
     <AppCarousel />
     
