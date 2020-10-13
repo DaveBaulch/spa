@@ -34,7 +34,7 @@
         </div>
 
        <BaseLinkButton
-        :text="btnText"
+        text="btnText"
         url="http:www.davebaulch.co.uk"
        />
 

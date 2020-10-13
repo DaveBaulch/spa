@@ -6,7 +6,7 @@
       imgSrc2="https://picsum.photos/767/275?image=20"
       imgSrc3="https://picsum.photos/991/260?image=30"
       imgSrc4="https://picsum.photos/1500/400?image=35"
-      btnText="Click me"
+      :btnText="Click me"
     />
     <div class="container home">
       

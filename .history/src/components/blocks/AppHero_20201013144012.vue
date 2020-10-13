@@ -6,17 +6,17 @@
       <span class="picturefill-background-source" :data-src="imgSrc1"></span>
       <span
         class="picturefill-background-source"
-        :data-src="imgSrc2"
+        data-src="imgSrc2"
         data-media="(min-width: 576px)"
       ></span>
       <span
         class="picturefill-background-source"
-        :data-src="imgSrc3"
+        data-src="imgSrc3"
         data-media="(min-width: 768px)"
       ></span>
       <span
         class="picturefill-background-source"
-        :data-src="imgSrc4"
+        data-src="imgSrc4"
         data-media="(min-width: 992px)"
       ></span>
     </div>
@@ -34,7 +34,7 @@
         </div>
 
        <BaseLinkButton
-        :text="btnText"
+        text="Link text"
         url="http:www.davebaulch.co.uk"
        />
 
@@ -56,20 +56,17 @@ export default {
   name: "AppHero",
   props: {
     imgSrc1: {
-      type: String
+      type: String,
     },
     imgSrc2: {
-      type: String
+      type: String,
     },
     imgSrc3: {
-      type: String
+      type: String,
     },
     imgSrc4: {
-      type: String
-    }, 
-    btnText: {
-      type: String
-    },                    
+      type: String,
+    },           
   },  
   components: {
     BaseLinkButton

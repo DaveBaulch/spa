@@ -34,7 +34,7 @@
         </div>
 
        <BaseLinkButton
-        :text="btnText"
+        text="Link text"
         url="http:www.davebaulch.co.uk"
        />
 
@@ -56,20 +56,17 @@ export default {
   name: "AppHero",
   props: {
     imgSrc1: {
-      type: String
+      type: String,
     },
     imgSrc2: {
-      type: String
+      type: String,
     },
     imgSrc3: {
-      type: String
+      type: String,
     },
     imgSrc4: {
-      type: String
-    }, 
-    btnText: {
-      type: String
-    },                    
+      type: String,
+    },           
   },  
   components: {
     BaseLinkButton

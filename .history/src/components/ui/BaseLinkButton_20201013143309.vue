@@ -25,6 +25,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../assets/sass/utilities/_variables.scss';
+@import '../../assets/sass/utilities/_mixins.scss';
 
 .button {
   display: inline-block;
@@ -32,7 +33,7 @@ export default {
   font-family: inherit;
   font-size: 100%;
   cursor: pointer;
-  border: 1px solid $grey-dark;
+  border: $border-brand-2;
   margin: 0;
   padding: 1.3rem 1.5rem;
   background-color: $white;

@@ -34,7 +34,7 @@
         </div>
 
        <BaseLinkButton
-        :text="btnText"
+        text="btntext"
         url="http:www.davebaulch.co.uk"
        />
 
@@ -67,7 +67,7 @@ export default {
     imgSrc4: {
       type: String
     }, 
-    btnText: {
+    btntext: {
       type: String
     },                    
   },  
