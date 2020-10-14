@@ -36,7 +36,7 @@ import AppCarousel from "@/components/blocks/appCarousel/AppCarousel.vue";
 export default {
   name: "Home",
   components: {
-    AppHero,
+    // AppHero,
     AppCarousel
   }
 };
