@@ -25,18 +25,18 @@
 
             <div class="container">
               <div class="carousel__content">
-                <h2 class="carousel__heading">Slide 1 heading</h2>
+                <h2 class="carousel__heading" v-if="pageData">{{ pageData.title1 }}/h2>
                 <div class="carousel__body">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Donec vehicula nisl augue, vel blandit
                     quam vestibulum eget. Phasellus posuere ipsum et velit consectetur, nec efficitur risus pulvinar.</p>
                 </div>
-                <BaseLink text="Click me 1" to="/about" type="router-link" class="carousel__button" />
+                <BaseLink :text="pageData.btn1Text" to="/about" type="router-link" class="carousel__button" v-if="pageData" />
               </div>
             </div>
           </div>
         </article>
 
-        <article class="carousel__item">
+        <!-- <article class="carousel__item">
           <div class="carousel__wrapper">  
 
             <div class="carousel__background picturefill-background is-lazy">
@@ -69,9 +69,9 @@
               </div>
             </div>
           </div>
-        </article>
+        </article> -->
 
-        <article class="carousel__item">
+        <!-- <article class="carousel__item">
           <div class="carousel__wrapper">  
 
             <div class="carousel__background picturefill-background is-lazy">
@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-        </article>
+        </article> -->
 
     </VueSlickCarousel>
 

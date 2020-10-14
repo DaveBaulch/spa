@@ -1,0 +1,10 @@
+{
+  "id": "1",
+  "title": "Hero title test 1",
+  "imgSrc1": "https://picsum.photos/575/300?image=10",
+  "imgSrc2": "https://picsum.photos/767/275?image=20",
+  "imgSrc3": "https://picsum.photos/991/260?image=30",
+  "imgSrc4": "https://picsum.photos/1500/400?image=35",
+  "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>",
+  "btnText": "Click this button"
+}
