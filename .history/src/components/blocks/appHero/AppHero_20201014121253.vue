@@ -23,19 +23,13 @@
       <div class="container">
         <div class="banner__content">
           <div class="banner__inner">
-            <h1 class="banner__heading">Hero title</h1>
+            <!-- <h1 class="banner__heading" v-if="renderComponent">{{ pageData.title }}</h1> -->
 
-            <div class="banner__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate tenetur officiis excepturi porro ducimus ab provident,
-                quas temporibus ratione illo quae neque cupiditate totam facere
-                nulla ad exercitationem itaque incidunt.
-              </p>
-            </div>
+            <!-- <div class="banner__text" v-html="pageData.text">
+            </div> -->
           </div>
 
-          <BaseLink :text="btnText" to="/about" type="router-link" />
+          <!-- <BaseLink :text="pageData.btnText" to="/about" type="router-link" /> -->
         </div>
       </div>
     </div>
@@ -43,7 +37,8 @@
 </template>
 
 <script>
-import BaseLink from '@/components/ui/BaseLink';
+// import axios from 'axios';
+// import BaseLink from '@/components/ui/BaseLink';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 
 export default {
@@ -68,25 +63,57 @@ export default {
       type: String,
       default: '',
       required: true
-    },
-    btnText: {
-      type: String,
-      default: '',
-      required: true
     }
-  },
-  components: {
-    BaseLink
-  },
-  mounted: function() {
-    new lazyloadPicturefillBackground();
+  },  
+  data () {
+      return {
+        pageData: null
+      }
+    },
+  // components: {
+  //   BaseLink
+  // },
+  created() {
+
+    // this.$nextTick(() => {
+    new lazyloadPicturefillBackground(); 
+    // })    
+//      this.$nextTick(() => {
+//     axios
+//       .get('data/data.json')
+//       .then((response) => {
+//         this.pageData = response.data;
+//         console.log(response.data);
+//         console.log(this.pageData);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });  
+// })          
+  },   
+  mounted() {
+    // this.$nextTick(() => {
+    //   new lazyloadPicturefillBackground(); 
+    // })
+     this.$nextTick(() => {
+    axios
+      .get('data/data.json')
+      .then((response) => {
+        this.pageData = response.data;
+        console.log(response.data);
+        console.log(this.pageData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });  
+})       
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/sass/utilities/_variables.scss';
-@import '../../assets/sass/utilities/_mixins.scss';
+@import '../../../assets/sass/utilities/_variables.scss';
+@import '../../../assets/sass/utilities/_mixins.scss';
 
 .banner {
   position: relative;
