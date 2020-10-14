@@ -47,7 +47,7 @@
 
             <div class="footer__col footer__col--2">
 
-              <h2>Work for us</h2>
+              <h2>Section heading 2</h2>
               <nav aria-label="Section heading 2 Navigation">
                 <ol class="footer-nav">
                   <li class="footer-nav__item">
@@ -72,7 +72,7 @@
 
             <div class="footer__col footer__col--3">
 
-              <h2>Our Sectors</h2>
+              <h2>Section heading 3</h2>
               <nav aria-label="Section heading 3 Navigation">
                 <ol class="footer-nav">
                   <li class="footer-nav__item">
@@ -100,7 +100,7 @@
 
             <div class="footer__col footer__col--4">
 
-              <h2>About Us</h2>
+              <h2>Section heading 3</h2>
               <nav aria-label="Section heading 3 Navigation">
                 <ol class="footer-nav">
                   <li class="footer-nav__item">
@@ -191,54 +191,38 @@ footer-wrapper {
 }
 
 .footer__col {
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .footer__col--1 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
+  @include breakpoint(sm) {
     grid-column: 1 / 7;
   }
 
   @include breakpoint(lg) {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
   }
 }
 
 .footer__col--2 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 7 / 13;
-  }  
+  @include breakpoint(sm) {
+   grid-column: 7 / 13;
+  }
 
   @include breakpoint(lg) {
-    grid-column: 4 / 7;
+    grid-column: 5 / 9;
   }
 }
 
 .footer__col--3 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 1 / 7;
-  }  
-
   @include breakpoint(lg) {
-    grid-column: 7 / 10;
-  }
-}
-
-.footer__col--4 {
-  grid-column: 1 / 13;
-
-  @include breakpoint(md) {
-    grid-column: 7 / 13;
-  }  
-
-  @include breakpoint(lg) {
-    grid-column: 10 / 13;
+    grid-column: 9 / 13;
   }
 }
 
@@ -252,7 +236,7 @@ footer-wrapper {
 
 // footer nav lists
 .footer-nav {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   list-style: none;
 }
 
@@ -276,22 +260,22 @@ footer-wrapper {
   }
 }
 
-// .footer-nav--2col {
+.footer-nav--2col {
 
-//   @include breakpoint(md) {
-//     column-count: 2;
-//   }
+  @include breakpoint(md) {
+    column-count: 2;
+  }
 
-//   .footer-nav__item {
-//     @include breakpoint(md) {
-//       padding: 0 2rem 0 0;
-//     }
-//   }
+  .footer-nav__item {
+    @include breakpoint(md) {
+      padding: 0 2rem 0 0;
+    }
+  }
 
-//   .footer-nav__item-icon {
-//     margin-right: 1rem;
-//   }
-// }
+  .footer-nav__item-icon {
+    margin-right: 1rem;
+  }
+}
 
 .copyright-notice-wrapper{
   grid-column: 1 / 13;

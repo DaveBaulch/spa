@@ -44,16 +44,19 @@
         pageData: null
       }
     },
+    methods: {
+      togglePause() {
+        if (this.isPaused) {
+          this.$refs.carousel.play();
+        } else {
+          this.$refs.carousel.pause();
+        }
+        this.isPaused = !this.isPaused;
+      },
+    },
     computed: {
       btnText () {
         return this.isPaused ? 'Play' : 'Pause'
-      }
-    },
-    watch: {
-      pageData: function () {
-        this.$nextTick(() => {
-          new lazyloadPicturefillBackground(); 
-        }) 
       }
     },
     created() {
@@ -65,17 +68,14 @@
         .catch((error) => {
           console.log(error);
         });            
-    },
-    methods: {
-      togglePause() {
-        if (this.isPaused) {
-          this.$refs.carousel.play();
-        } else {
-          this.$refs.carousel.pause();
-        }
-        this.isPaused = !this.isPaused;
-      },
-    }    
+    },       
+    watch: {
+      pageData: function () {
+        this.$nextTick(() => {
+          new lazyloadPicturefillBackground(); 
+        }) 
+      }
+    }
   }
 </script> 
 

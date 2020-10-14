@@ -22,7 +22,7 @@
       </li>
       <li class="social-links__item">
         <TheSocialSharingItem href="https://www.youtube.com/">
-          <img src="@/assets/images/svg/icon-footer-youtube.svg" width="22" height="16" alt="YouTube" />
+          <img src="@/assets/images/svg/icon-footer-youtube.svg" width="22" height="16" alt="YouTube"/>
           <span class="sr-only">You Tube</span>
         </TheSocialSharingItem>
       </li>

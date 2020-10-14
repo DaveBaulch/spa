@@ -191,15 +191,13 @@ footer-wrapper {
 }
 
 .footer__col {
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .footer__col--1 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 1 / 7;
-  }
+
 
   @include breakpoint(lg) {
     grid-column: 1 / 4;
@@ -209,36 +207,26 @@ footer-wrapper {
 .footer__col--2 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 7 / 13;
-  }  
+
 
   @include breakpoint(lg) {
-    grid-column: 4 / 7;
+    grid-column: 4 / 17;
   }
 }
 
 .footer__col--3 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 1 / 7;
-  }  
-
   @include breakpoint(lg) {
-    grid-column: 7 / 10;
+    grid-column: 10 / 13;
   }
 }
 
 .footer__col--4 {
   grid-column: 1 / 13;
 
-  @include breakpoint(md) {
-    grid-column: 7 / 13;
-  }  
-
   @include breakpoint(lg) {
-    grid-column: 10 / 13;
+    grid-column: 9 / 13;
   }
 }
 
@@ -252,7 +240,7 @@ footer-wrapper {
 
 // footer nav lists
 .footer-nav {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   list-style: none;
 }
 

@@ -4,25 +4,25 @@
     <ul class="social-links">
       <li class="social-links__item">
         <TheSocialSharingItem>
-          <img src="@/assets/images/svg/icon-footer-twitter.svg" width="20" height="16" alt="Twitter" />
+          <img src="@/assets/images/svg/icon-footer-twitter.svg" width="20" height="16" />
           <span class="sr-only">Twitter</span>
         </TheSocialSharingItem>
       </li>
       <li class="social-links__item">
         <TheSocialSharingItem>
-          <img src="@/assets/images/svg/icon-footer-linkedin.svg" width="21" height="21" alt="LinkedIn" />
+          <img src="@/assets/images/svg/icon-footer-linkedin.svg" width="21" height="21" />
           <span class="sr-only">LinkedIn</span>
         </TheSocialSharingItem>
       </li>
       <li class="social-links__item">
         <TheSocialSharingItem>
-          <img src="@/assets/images/svg/icon-footer-facebook.svg" width="21" height="21" alt="Facebook" />
+          <img src="@/assets/images/svg/icon-footer-facebook.svg" width="21" height="21" />
           <span class="sr-only">Instagram</span>
         </TheSocialSharingItem>
       </li>
       <li class="social-links__item">
         <TheSocialSharingItem href="https://www.youtube.com/">
-          <img src="@/assets/images/svg/icon-footer-youtube.svg" width="22" height="16" alt="YouTube" />
+          <img src="@/assets/images/svg/icon-footer-youtube.svg" width="22" height="16" />
           <span class="sr-only">You Tube</span>
         </TheSocialSharingItem>
       </li>

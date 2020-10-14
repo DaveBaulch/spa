@@ -111,12 +111,12 @@ p {
 // List styles
 ol,
 ul {
-  margin: 2rem 0 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 
   &:not([class]) {
-    margin: 0 1.22rem 0.8rem 1.5rem;
+    margin: 2rem 1.22rem 0.8rem 1.5rem;
     list-style-position: inside;
   }
 }

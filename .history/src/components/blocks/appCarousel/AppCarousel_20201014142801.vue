@@ -44,6 +44,16 @@
         pageData: null
       }
     },
+    methods: {
+      togglePause() {
+        if (this.isPaused) {
+          this.$refs.carousel.play();
+        } else {
+          this.$refs.carousel.pause();
+        }
+        this.isPaused = !this.isPaused;
+      },
+    },
     computed: {
       btnText () {
         return this.isPaused ? 'Play' : 'Pause'
@@ -55,7 +65,7 @@
           new lazyloadPicturefillBackground(); 
         }) 
       }
-    },
+    }
     created() {
       axios
         .get('data/carousel-data.json')
@@ -65,17 +75,7 @@
         .catch((error) => {
           console.log(error);
         });            
-    },
-    methods: {
-      togglePause() {
-        if (this.isPaused) {
-          this.$refs.carousel.play();
-        } else {
-          this.$refs.carousel.pause();
-        }
-        this.isPaused = !this.isPaused;
-      },
-    }    
+    }      
   }
 </script> 
 

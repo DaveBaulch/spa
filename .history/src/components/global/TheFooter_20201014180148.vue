@@ -191,7 +191,7 @@ footer-wrapper {
 }
 
 .footer__col {
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .footer__col--1 {
@@ -252,7 +252,7 @@ footer-wrapper {
 
 // footer nav lists
 .footer-nav {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   list-style: none;
 }
 

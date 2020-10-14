@@ -252,7 +252,7 @@ footer-wrapper {
 
 // footer nav lists
 .footer-nav {
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   list-style: none;
 }
 
