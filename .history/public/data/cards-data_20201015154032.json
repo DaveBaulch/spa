@@ -52,8 +52,7 @@
       "link": "/",
       "imgSrc": "https://picsum.photos/575/300?image=6",
       "title": "Card title 6",
-      "text": "<p>Card 6 text excepturi porro ducimus totam facere nulla ad exercitationem itaque incidunt.</p>",
-      "date": "14/10/2019"
+      "text": "<p>Card 6 text excepturi porro ducimus totam facere nulla ad exercitationem itaque incidunt.</p>"
     },
     {
       "id": "7",
@@ -61,8 +60,7 @@
       "link": "/",
       "imgSrc": "https://picsum.photos/575/300?image=7",
       "title": "Card title 7",
-      "text": "<p>Card 7 text excepturi porro ducimus ab provident, quas temporibus facere nulla ad exercitationem itaque incidunt.</p>",
-      "date": "15/10/2019"
+      "text": "<p>Card 7 text excepturi porro ducimus ab provident, quas temporibus facere nulla ad exercitationem itaque incidunt.</p>"
     },
     {
       "id": "8",
@@ -70,8 +68,7 @@
       "link": "/",
       "imgSrc": "https://picsum.photos/575/300?image=8",
       "title": "Card title 8",
-      "text": "<p>Card 8 text excepturi porro ducimus ab provident.</p>",
-      "date": "16/10/2019"
+      "text": "<p>Card 8 text excepturi porro ducimus ab provident.</p>"
     }
   ]
 }

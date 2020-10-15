@@ -12,9 +12,20 @@
 
         <ol class="card-list__list" v-if="blockData">
 
+          <transition-group
+            name="staggered-fade"
+            tag="ul"
+            v-bind:css="false"
+            v-on:before-enter="beforeEnter"
+            v-on:enter="enter"
+            v-on:leave="leave"
+          >
+
           <li class="card-list__item" v-for="item in blockData.data" :key="item.id">
             <CardListCard :itemData="item" />
           </li>
+
+          </transition-group>
 
         </ol>
 

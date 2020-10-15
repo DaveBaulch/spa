@@ -12,7 +12,7 @@
 
         <ol class="card-list__list" v-if="blockData">
 
-          <li class="card-list__item" v-for="item in blockData.data" :key="item.id">
+          <li class="card-list__item" v-for="item in blockData.data" :key="item.id" transition="staggered">
             <CardListCard :itemData="item" />
           </li>
 
@@ -23,6 +23,8 @@
     </div>
 
   </article>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 
 </template>
 

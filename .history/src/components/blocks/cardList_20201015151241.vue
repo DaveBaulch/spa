@@ -12,7 +12,7 @@
 
         <ol class="card-list__list" v-if="blockData">
 
-          <li class="card-list__item" v-for="item in blockData.data" :key="item.id">
+          <li class="card-list__item" v-for="item in blockData.data" :key="item.id" transition="staggered" stagger="250">
             <CardListCard :itemData="item" />
           </li>
 

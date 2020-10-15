@@ -13,7 +13,7 @@
     <div class="card__content">
       <div class="card__inner">
         <h3 class="card__title"><a :href="itemData.link">{{ itemData.title }}</a></h3>
-        <p class="card__date">{{ itemData.date }}</p>
+        <p>{{ itemData.date }}</p>
         <div class="card__description" v-html="itemData.text"></div>
       </div>
     </div>
@@ -62,11 +62,6 @@ export default {
       height: 100%;
     }
   }
-}
-
-.card__date {
-  margin: 0;
-  font-size: 1.4rem;
 }
 
 .card__content {
