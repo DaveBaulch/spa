@@ -3,23 +3,22 @@
   <div class="home">
 
     <div class="container">
-      <h1>Quote</h1>
+      <h1>CTA</h1>
     </div>
 
-    <AppQuote />   
+    <AppCTA />   
 
   </div>
 
 </template>
 
 <script>
-// @ is an alias to /src
-import AppQuote from "@/components/blocks/AppQuote.vue";
+import CTA from "@/components/blocks/appSectors/CTA.vue";
 
 export default {
-  name: "Quote",
+  name: "CTA",
   components: {
-    AppQuote
+    AppSectors
   }
 };
 </script>

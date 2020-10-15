@@ -3,10 +3,10 @@
   <div class="home">
 
     <div class="container">
-      <h1>Quote</h1>
+      <h1>Sectors</h1>
     </div>
 
-    <AppQuote />   
+    <AppSectors />   
 
   </div>
 
@@ -14,12 +14,12 @@
 
 <script>
 // @ is an alias to /src
-import AppQuote from "@/components/blocks/AppQuote.vue";
+import AppSectors from "@/components/blocks/appSectors/AppSectors.vue";
 
 export default {
-  name: "Quote",
+  name: "Sectors",
   components: {
-    AppQuote
+    AppSectors
   }
 };
 </script>

@@ -54,12 +54,12 @@ const routes = [
   },
   {
     path: "/cta",
-    name: "CTA",
+    name: "CardList",
     meta: {
       title: 'CTA component'
     },   
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/CTA.vue")
+      import(/* webpackChunkName: "about" */ "../views/CardList.vue")
   },
   {
     path: "/quote",

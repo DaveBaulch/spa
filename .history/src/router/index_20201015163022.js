@@ -54,7 +54,7 @@ const routes = [
   },
   {
     path: "/cta",
-    name: "CTA",
+    name: "CardList",
     meta: {
       title: 'CTA component'
     },   
