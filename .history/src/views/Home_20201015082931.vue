@@ -16,9 +16,14 @@
 
 <script>
 // @ is an alias to /src
+import AppHero from "@/components/blocks/appHero/AppHero.vue";
+import AppCarousel from "@/components/blocks/appCarousel/AppCarousel.vue";
+
 export default {
   name: "Home",
   components: {
+    AppHero,
+    AppCarousel
   }
 };
 </script>
@@ -35,12 +40,11 @@ export default {
 }
 
 .component-list__item {
-  margin: 1rem 0 0 0;
-  padding: 0;
+
 }
 
 .component-list__link {
-  margin: 0;
+  margin: 0 10px;
 
   a {
     text-decoration: none;

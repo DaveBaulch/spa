@@ -4,7 +4,7 @@
     <header class="header">
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
-        <router-link to="/">Site logo</router-link>
+        <router-link to="/">Site logo</router-link> |
       </div>
       <div class="navigation-items">
         <!-- <ul class="nav-list">
@@ -34,7 +34,7 @@ export default {
 
 .header-container {
   width: 100%;
-  min-height: 60px;
+  height: 60px;
   background-color: $black;
   position: fixed;
   z-index: 100;
@@ -46,7 +46,7 @@ export default {
 
 .header {
   width: 100%;
-  min-height: 60px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,17 +56,13 @@ export default {
 }
 
 .logo {
-  margin: 0;
-  padding: 0;
-  border: 1px solid $white;
+  margin: 0 20px;
+  font-size: 1.3rem;
 }
 
 .logo a {
-  margin: 0;
-  padding: 1rem;
   text-decoration: none;
   color: $white;
-  display: block;
 }
 
 .navigation-items {
@@ -78,20 +74,20 @@ export default {
 }
 
 
-// .nav-list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-// }
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-// .nav-list__item {
-//   margin: 0 10px;
-// }
+.nav-list__item {
+  margin: 0 10px;
+}
 
-// .nav-item a {
-//   text-decoration: none;
-//   color: $white;
-// }
+.nav-item a {
+  text-decoration: none;
+  color: $white;
+}
 
 </style>

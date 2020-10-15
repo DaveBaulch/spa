@@ -66,7 +66,6 @@ export default {
   padding: 1rem;
   text-decoration: none;
   color: $white;
-  display: block;
 }
 
 .navigation-items {

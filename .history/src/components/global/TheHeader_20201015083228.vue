@@ -56,17 +56,14 @@ export default {
 }
 
 .logo {
-  margin: 0;
-  padding: 0;
+  margin: 2rem 0;
+  padding: 1rem;
   border: 1px solid $white;
 }
 
 .logo a {
-  margin: 0;
-  padding: 1rem;
   text-decoration: none;
   color: $white;
-  display: block;
 }
 
 .navigation-items {

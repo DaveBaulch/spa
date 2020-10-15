@@ -9,6 +9,24 @@
           <li class="component-list__item"><router-link to="/carousel" class="component-list__link">Carousel</router-link></li>
         </ul>      
     </div>
+
+    <div class="container">
+      <h2>Hero banner</h2>
+    </div>
+
+    <!-- <AppHero 
+      imgSrc1="https://picsum.photos/575/300?image=10"
+      imgSrc2="https://picsum.photos/767/275?image=20"
+      imgSrc3="https://picsum.photos/991/260?image=30"
+      imgSrc4="https://picsum.photos/1500/400?image=35"
+    />   -->
+    <AppHero />   
+
+
+    <div class="container">
+      <h2>Carousel</h2>
+    </div>      
+    <AppCarousel />
     
   </div>
 
@@ -16,9 +34,14 @@
 
 <script>
 // @ is an alias to /src
+import AppHero from "@/components/blocks/appHero/AppHero.vue";
+import AppCarousel from "@/components/blocks/appCarousel/AppCarousel.vue";
+
 export default {
   name: "Home",
   components: {
+    AppHero,
+    AppCarousel
   }
 };
 </script>
@@ -35,12 +58,11 @@ export default {
 }
 
 .component-list__item {
-  margin: 1rem 0 0 0;
-  padding: 0;
+
 }
 
 .component-list__link {
-  margin: 0;
+  margin: 0 10px;
 
   a {
     text-decoration: none;

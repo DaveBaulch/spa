@@ -35,7 +35,7 @@ export default {
 }
 
 .component-list__item {
-  margin: 1rem 0 0 0;
+  margin: 0;
   padding: 0;
 }
 

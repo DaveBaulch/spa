@@ -35,12 +35,11 @@ export default {
 }
 
 .component-list__item {
-  margin: 1rem 0 0 0;
-  padding: 0;
+
 }
 
 .component-list__link {
-  margin: 0;
+  margin: 0 10px;
 
   a {
     text-decoration: none;
