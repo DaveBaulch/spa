@@ -17,6 +17,7 @@
         <li class="nav-item"><router-link to="/sectors" class="component-list__link">Sectors</router-link></li>
         <li class="nav-item"><router-link to="/cards" class="component-list__link">Cards</router-link></li>
         <li class="nav-item"><router-link to="/cta" class="component-list__link">CTA</router-link></li>
+        
         <li class="nav-item"><router-link to="/quote" class="component-list__link">Quote</router-link></li>
       </ul>
     </div>
