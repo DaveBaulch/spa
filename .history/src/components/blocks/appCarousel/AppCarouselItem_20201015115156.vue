@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<styles scoped lang="scss">
 @import '../../../assets/sass/utilities/_variables.scss';
 @import '../../../assets/sass/utilities/_mixins.scss';
 
