@@ -1,0 +1,13 @@
+{
+  "title": "Sectors",
+  "data":[
+    {
+      "id": "1",
+      "link": "",
+      "title": "Hero title test 1",
+      "imgSrc": "https://picsum.photos/575/300?image=10",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tenetur officiis excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>",
+      "btnText": "Click this button 1"
+    }
+  ]
+}

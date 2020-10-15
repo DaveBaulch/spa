@@ -1,0 +1,33 @@
+{
+  "title": "Sectors title",
+  "data":[
+    {
+      "id": "1",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=10",
+      "title": "Sector title 1",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": "2",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=10",
+      "title": "Sector title 1",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": "3",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=10",
+      "title": "Sector title 1",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    },
+    {
+      "id": "4",
+      "link": "/",
+      "imgSrc": "https://picsum.photos/575/300?image=10",
+      "title": "Sector title 1",
+      "text": "excepturi porro ducimus ab provident, quas temporibus ratione illo quae neque cupiditate totam facere nulla ad exercitationem itaque incidunt.</p>"
+    }
+  ]
+}
