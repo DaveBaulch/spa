@@ -14,7 +14,7 @@
     {
       "id": "2",
       "tag": "Tag 2",
-      "tagClass": "work",
+      "tagClass": null,
       "link": "/",
       "imgSrc": "https://picsum.photos/575/300?image=2",
       "title": "Card title 2",
@@ -34,7 +34,7 @@
     {
       "id": "4",
       "tag": "Tag 3",
-      "tagClass": "case-study",
+      "tagClass": null,
       "link": "/",
       "imgSrc": "https://picsum.photos/575/300?image=4",
       "title": "Card title 4",

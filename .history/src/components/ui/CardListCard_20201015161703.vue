@@ -1,6 +1,6 @@
 <template>
   <article aria-label="Example showing an article title over two lines here" class="card js-card">
-    <p class="card__badge" :class="itemData.tagClass" v-if="itemData.tag">{{ itemData.tag }}</p>
+    <p class="card__badge" :class="itemData.tagClass" >{{ itemData.tag }}</p>
     <div class="card__img-holder">
       <picture>
         <source :srcset="itemData.imgSrc" media="(min-width: 1024px)">
@@ -80,20 +80,6 @@ export default {
   top: 0;
   background-color: $grey-light;
   margin: 0;
-
-  &.news {
-    background-color: $yellow;
-  }
-
-  &.work {
-    background-color: $blue;
-    color: $white;
-  }
-  
-    &.case-study {
-    background-color: $red;
-    color: $white;
-  }
 }
 
 </style>
