@@ -3,10 +3,10 @@
   <div class="home">
 
     <div class="container">
-      <h1>Hero</h1>
+      <h1>Quote</h1>
     </div>
 
-    <AppHero />   
+    <AppQuote />   
 
   </div>
 
@@ -14,16 +14,19 @@
 
 <script>
 // @ is an alias to /src
-import AppHero from "@/components/blocks/appHero/AppHero.vue";
+import AppQuote from "@/components/blocks/appQuote.vue";
 
 export default {
   name: "Home",
   components: {
-    AppHero
+    AppQuote
   }
 };
 </script>
 
 <style scoped lang="scss">
+@import '../assets/sass/utilities/_variables.scss';
+@import '../assets/sass/utilities/_mixins.scss';
+
 
 </style>

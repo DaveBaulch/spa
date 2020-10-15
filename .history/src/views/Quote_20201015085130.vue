@@ -25,5 +25,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/sass/utilities/_variables.scss';
+@import '../assets/sass/utilities/_mixins.scss';
+
+.component-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.component-list__item {
+
+}
+
+.component-list__link {
+  margin: 0 10px;
+
+  a {
+    text-decoration: none;
+    color: $white;    
+  }
+}
+
 
 </style>

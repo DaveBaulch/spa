@@ -7,7 +7,7 @@
         <ul class="component-list">
           <li class="component-list__item"><router-link to="/hero" class="component-list__link">Hero</router-link></li>
           <li class="component-list__item"><router-link to="/carousel" class="component-list__link">Carousel</router-link></li>
-          <li class="component-list__item"><router-link to="/quote" class="component-list__link">Quote</router-link></li>
+          <li class="component-list__item"><router-link to="/carousel" class="component-list__link">Quote</router-link></li>
         </ul>      
     </div>
     
