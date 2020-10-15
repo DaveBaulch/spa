@@ -107,14 +107,21 @@ export default {
   @include breakpoint(lg) {
     padding: 8rem 0;
   }
+
+  p {
+    margin: 0;
+  }
 }
 
 .cta__title {
   color: $white;
+}
+
+.cta__text * {
   margin: 0;
 }
 
 .cta__btn {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 </style>

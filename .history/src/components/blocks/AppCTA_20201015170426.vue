@@ -114,6 +114,10 @@ export default {
   margin: 0;
 }
 
+.cta__text p {
+  border: 1px solid #fff;
+}
+
 .cta__btn {
   margin-top: 3.5rem;
 }

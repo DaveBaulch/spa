@@ -1,6 +1,6 @@
 <template>
   <article class="section cta-block">
-    <div class="cta" v-if="blockData">
+    <div class="cta">
       <div class="cta__background picturefill-background is-lazy">
         <span class="picturefill-background-source" :data-src="blockData.imgSrc1"></span>
         <span
@@ -111,10 +111,13 @@ export default {
 
 .cta__title {
   color: $white;
-  margin: 0;
+}
+
+.cta__text > p {
+  margin-top: 0;
 }
 
 .cta__btn {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 </style>

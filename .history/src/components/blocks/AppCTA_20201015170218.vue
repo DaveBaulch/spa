@@ -111,10 +111,16 @@ export default {
 
 .cta__title {
   color: $white;
-  margin: 0;
+}
+
+.cta__text {
+  border: 1px solid #f0f;
+  p {
+    margin: 0;
+  }
 }
 
 .cta__btn {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 </style>
