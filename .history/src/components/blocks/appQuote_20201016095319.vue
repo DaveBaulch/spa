@@ -1,8 +1,8 @@
 <template>
-<div class="section quote-block" v-if="blockData">
+<div class="section quote-block">
   <div class="container">
     <div class="row">
-      <blockquote class="quote">
+      <blockquote class="quote" v-if="blockData">
         <span v-html="blockData.text" class="quote__text"></span>
         <cite>
           <span v-if="hasAuthor" class="quote__author">{{ blockData.author }}</span>

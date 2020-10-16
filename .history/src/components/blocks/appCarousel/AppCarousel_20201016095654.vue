@@ -46,7 +46,7 @@
           "adaptiveHeight": true
         },
         isPaused: false,
-        blockData: null
+        pageData: null
       }
     },
     computed: {

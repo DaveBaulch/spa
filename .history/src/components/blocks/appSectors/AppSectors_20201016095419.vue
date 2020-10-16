@@ -1,6 +1,6 @@
 <template>
 
-  <section class="sectors-panel" v-if="blockData">
+  <section aria-label="Our Sectors" class="sectors-panel">
 
     <div class="container">
 

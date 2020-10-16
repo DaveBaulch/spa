@@ -1,21 +1,21 @@
 <template>
-  <article class="section banner-block" v-if="blockData">
+  <article class="section banner-block" v-if="pageData">
     <div class="banner">
       <div class="banner__background picturefill-background is-lazy">
-        <span class="picturefill-background-source" :data-src="blockData.imgSrc1"></span>
+        <span class="picturefill-background-source" :data-src="pageData.imgSrc1"></span>
         <span
           class="picturefill-background-source"
-          :data-src="blockData.imgSrc2"
+          :data-src="pageData.imgSrc2"
           data-media="(min-width: 576px)"
         ></span>
         <span
           class="picturefill-background-source"
-          :data-src="blockData.imgSrc3"
+          :data-src="pageData.imgSrc3"
           data-media="(min-width: 768px)"
         ></span>
         <span
           class="picturefill-background-source"
-          :data-src="blockData.imgSrc4"
+          :data-src="pageData.imgSrc4"
           data-media="(min-width: 992px)"
         ></span>
       </div>
@@ -23,13 +23,13 @@
       <div class="container">
         <div class="banner__content">
           <div class="banner__inner">
-            <h1 class="banner__heading">{{ blockData.title }}</h1>
+            <h1 class="banner__heading">{{ pageData.title }}</h1>
 
-            <div class="banner__text" v-html="blockData.text">
+            <div class="banner__text" v-html="pageData.text">
             </div>
           </div>
 
-          <BaseLink :text="blockData.btnText" to="/about" type="router-link" />
+          <BaseLink :text="pageData.btnText" to="/about" type="router-link" v-if="pageData" />
         </div>
       </div>
     </div>
@@ -72,14 +72,14 @@ export default {
   // },  
   data () {
     return {
-      blockData: null
+      pageData: null
     }
   },
   components: {
     BaseLink
   },
   watch: {
-    blockData: function () {
+    pageData: function () {
       this.$nextTick(() => {
         new lazyloadPicturefillBackground(); 
       }) 
@@ -89,7 +89,7 @@ export default {
     axios
       .get('data/hero-data.json')
       .then((response) => {
-        this.blockData = response.data;
+        this.pageData = response.data;
       })
       .catch((error) => {
         console.log(error);

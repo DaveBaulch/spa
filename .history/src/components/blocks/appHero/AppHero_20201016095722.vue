@@ -1,7 +1,7 @@
 <template>
-  <article class="section cta-block" v-if="blockData">
-    <div class="cta">
-      <div class="cta__background picturefill-background is-lazy">
+  <article class="section banner-block" v-if="blockData">
+    <div class="banner">
+      <div class="banner__background picturefill-background is-lazy">
         <span class="picturefill-background-source" :data-src="blockData.imgSrc1"></span>
         <span
           class="picturefill-background-source"
@@ -21,10 +21,15 @@
       </div>
 
       <div class="container">
-        <div class="cta__content">
-          <h1 v-if="blockData" class="cta__title">{{ blockData.title }}</h1>
-          <div v-if="blockData" v-html="blockData.text" class="cta__text"></div>
-          <BaseLink :text="blockData.btnText" to="/about" type="router-link" v-if="blockData" class="cta__btn" />
+        <div class="banner__content">
+          <div class="banner__inner">
+            <h1 class="banner__heading">{{ blockData.title }}</h1>
+
+            <div class="banner__text" v-html="blockData.text">
+            </div>
+          </div>
+
+          <BaseLink :text="blockData.btnText" to="/about" type="router-link" />
         </div>
       </div>
     </div>
@@ -37,15 +42,37 @@ import BaseLink from '@/components/ui/BaseLink';
 import lazyloadPicturefillBackground from 'lazyload-picturefill-background';
 
 export default {
-  name: 'AppCTA',
+  name: 'AppHero',
   props: {
     componentId: {
       type: Number
     },
   },     
+  // props: {
+  //   imgSrc1: {
+  //     type: String,
+  //     default: '',
+  //     required: true
+  //   },
+  //   imgSrc2: {
+  //     type: String,
+  //     default: '',
+  //     required: true
+  //   },
+  //   imgSrc3: {
+  //     type: String,
+  //     default: '',
+  //     required: true
+  //   },
+  //   imgSrc4: {
+  //     type: String,
+  //     default: '',
+  //     required: true
+  //   }
+  // },  
   data () {
     return {
-      blockData: null
+      pageData: null
     }
   },
   components: {
@@ -60,23 +87,29 @@ export default {
   },  
   created() {
     axios
-      .get('data/cta-data.json')
+      .get('data/hero-data.json')
       .then((response) => {
         this.blockData = response.data;
       })
       .catch((error) => {
         console.log(error);
       });            
+  },   
+  mounted() {
+    // this.$nextTick(() => {
+    //   new lazyloadPicturefillBackground(); 
+    // })
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/sass/utilities/_variables.scss';
-@import '../../assets/sass/utilities/_mixins.scss';
+@import '../../../assets/sass/utilities/_variables.scss';
+@import '../../../assets/sass/utilities/_mixins.scss';
 
-.cta {
+.banner {
   position: relative;
+  background-color: $grey-light;
 
   .container {
     width: auto;
@@ -84,42 +117,28 @@ export default {
   }
 }
 
-.cta__background {
+.banner__background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
-
-  &:after {
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(10, 50, 70, 0.3) 50%, rgba(10, 50, 70, 0.6) 95%);
-  }
 }
 
-.cta__content {
-  text-align: left;
+.banner__content {
+  text-align: center;
   padding: 4rem 0;
-  color: $white;
 
   @include breakpoint(lg) {
     padding: 8rem 0;
   }
 }
 
-.cta__title {
-  color: $white;
-  margin: 0;
-}
-
-.cta__btn {
-  margin-top: 3.5rem;
+.banner__inner {
+  margin-bottom: 3rem;
+  background-color: $white;
+  padding: 2rem;
+  color: $black;
 }
 </style>

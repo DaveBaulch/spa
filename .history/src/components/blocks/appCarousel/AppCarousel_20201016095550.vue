@@ -1,8 +1,8 @@
 <template>
-  <section class="section carousel-block" v-if="blockData">
+  <section class="section carousel-block" v-if="pageData">
     <VueSlickCarousel v-bind="settings" class="carousel" ref="carousel">
 
-        <AppCarouselItem v-for="item in blockData" :key="item.id" :itemData="item" />
+        <AppCarouselItem v-for="item in pageData" :key="item.id" :itemData="item" />
 
     </VueSlickCarousel>
 
@@ -46,7 +46,7 @@
           "adaptiveHeight": true
         },
         isPaused: false,
-        blockData: null
+        pageData: null
       }
     },
     computed: {
@@ -55,7 +55,7 @@
       }
     },
     watch: {
-      blockData: function () {
+      pageData: function () {
         this.$nextTick(() => {
           new lazyloadPicturefillBackground(); 
         }) 
@@ -65,7 +65,7 @@
       axios
         .get('data/carousel-data.json')
         .then((response) => {
-          this.blockData = response.data.data;
+          this.pageData = response.data.data;
         })
         .catch((error) => {
           console.log(error);

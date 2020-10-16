@@ -1,6 +1,6 @@
 <template>
   <article class="section cta-block" v-if="blockData">
-    <div class="cta">
+    <div class="cta" v-if="blockData">
       <div class="cta__background picturefill-background is-lazy">
         <span class="picturefill-background-source" :data-src="blockData.imgSrc1"></span>
         <span

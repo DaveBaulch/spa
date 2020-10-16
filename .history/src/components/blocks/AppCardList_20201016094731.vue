@@ -1,16 +1,16 @@
 <template>
 
-  <article class="section card-list-block" v-if="blockData">
+  <article class="section card-list-block">
 
     <div class="container">
 
       <div class="card-list">
 
         <div class="card-list__heading">
-          <h2>{{ blockData.title }}</h2>
+          <h2 v-if="blockData">{{ blockData.title }}</h2>
         </div>
 
-        <ol class="card-list__list">
+        <ol class="card-list__list" v-if="blockData">
 
           <li class="card-list__item" v-for="item in blockData.data" :key="item.id">
             <CardListCard :itemData="item" />
