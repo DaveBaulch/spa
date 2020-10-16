@@ -84,7 +84,7 @@
   }
 </script> 
 
-<style lang="scss">
+<style scoped lang="scss">
 @import '../../../assets/sass/utilities/_variables.scss';
 @import '../../../assets/sass/utilities/_mixins.scss';
 
@@ -96,32 +96,32 @@
   position: relative;
   padding: 0;
   margin: 0 auto;
-}
 
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  width: 30px;
-  height: 20px;
-  z-index: 100;
-  outline: none;
-  border: none;
-  text-indent: -9999em;
-  transform: translateY(-50%);
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 20px;
+    z-index: 100;
+    outline: none;
+    border: none;
+    text-indent: -9999em;
+    transform: translateY(-50%);
 
-  &:focus {
-    border-color: $red;
+    &:focus {
+      border-color: $red;
+    }
   }
-}
 
-.slick-next {
-  background: url('~@/assets/images/svg/icon-carousel-next.svg') no-repeat transparent center center;
-  right: 0;
-}
+  .slick-next {
+    background: url('~@/assets/images/svg/icon-carousel-next.svg') no-repeat transparent center center;
+    right: 0;
+  }
 
-.slick-prev {
-  background: url('~@/assets/images/svg/icon-carousel-prev.svg') no-repeat transparent center center;
-  left: 0;
+  .slick-prev {
+    background: url('~@/assets/images/svg/icon-carousel-prev.svg') no-repeat transparent center center;
+    left: 0;
+  }
 }
 
 .carousel .carousel__button {
@@ -242,4 +242,4 @@
   background-image: url('~@/assets/images/svg/icon-play.svg');
 }
 
-</style>
+</styles>

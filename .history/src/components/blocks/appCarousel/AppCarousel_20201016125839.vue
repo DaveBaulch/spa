@@ -90,12 +90,14 @@
 
 .carousel-block {
   position: relative;
+  border: 10px solid red;
 }
 
 .carousel {
   position: relative;
   padding: 0;
   margin: 0 auto;
+  border: 10px solid green;
 }
 
 .slick-arrow {
