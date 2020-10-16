@@ -19,8 +19,8 @@
 
       <h2>Pages</h2>
         <ul class="component-list">
-          <li class="component-list__item"><router-link to="/test-page" class="component-list__link">Test Page - static blocks</router-link> (hard-coded)</li>
-          <li class="component-list__item"><router-link to="/test-page2" class="component-list__link">Test Page - conditional blocks</router-link> (based on API page data) </li>
+          <li class="component-list__item"><router-link to="/test-page" class="component-list__link">Test Page - static (hard-coded) blocks</router-link></li>
+          <li class="component-list__item"><router-link to="/test-page2" class="component-list__link">Test Page - conditional (based on API page data) blocks</router-link></li>
         </ul>      
     </div>
     

@@ -6,13 +6,12 @@
       <h1>Card List</h1>
     </div>
 
-    <AppHero />
-    <AppText />
-    <AppSectors />
-    <AppCarousel />
-    <AppQuote />
-    <AppCardList />   
-    <AppCTA />
+    <component 
+      :is="item.type" 
+      v-for="item in pageData"
+      :key="item.id">
+    </component>
+
   </div>
 
 </template>
@@ -28,7 +27,7 @@ import AppCTA from "@/components/blocks/AppCTA.vue";
 import AppSectors from "@/components/blocks/appSectors/AppSectors.vue";
 
 export default {
-  name: "TestPage",
+  name: "TestPage2",
   components: {
     AppHero,
     AppText,
@@ -37,8 +36,23 @@ export default {
     AppQuote,
     AppCTA,
     AppSectors
-  }
-};
+  },
+  data () {
+    return {
+      pageData: null
+    }
+  },
+  created() {
+    axios
+      .get('data/text-data.json')
+      .then((response) => {
+        this.pageData = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });            
+    }
+}
 </script>
 
 <style scoped lang="scss">

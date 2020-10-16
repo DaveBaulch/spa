@@ -6,19 +6,19 @@
       <h1>Card List</h1>
     </div>
 
-    <AppHero />
-    <AppText />
-    <AppSectors />
-    <AppCarousel />
-    <AppQuote />
-    <AppCardList />   
-    <AppCTA />
+    <component 
+      :is="item.type" 
+      v-for="item in pageData.data"
+      :key="item.id">
+    </component>
+
   </div>
 
 </template>
 
 <script>
 // @ is an alias to /src
+import axios from 'axios';
 import AppHero from "@/components/blocks/appHero/AppHero.vue";
 import AppText from "@/components/blocks/AppText.vue";
 import AppCardList from "@/components/blocks/AppCardList.vue";
@@ -28,7 +28,7 @@ import AppCTA from "@/components/blocks/AppCTA.vue";
 import AppSectors from "@/components/blocks/appSectors/AppSectors.vue";
 
 export default {
-  name: "TestPage",
+  name: "TestPage2",
   components: {
     AppHero,
     AppText,
@@ -37,8 +37,23 @@ export default {
     AppQuote,
     AppCTA,
     AppSectors
-  }
-};
+  },
+  data () {
+    return {
+      pageData: null
+    }
+  },
+  created() {
+    axios
+      .get('data/page-data.json')
+      .then((response) => {
+        this.pageData = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });            
+    }
+}
 </script>
 
 <style scoped lang="scss">

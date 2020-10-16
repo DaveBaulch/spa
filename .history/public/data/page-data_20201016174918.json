@@ -1,0 +1,19 @@
+{
+  "pageID": "",
+  "title": "Page title",
+
+  "data":[
+    {
+      "id": 1,
+      "type": "AppQuote"
+    },
+    {      
+      "id": 2,
+      "type": "AppCTA"
+     },
+    {      
+      "id": 3,
+      "type": "AppText"
+    }
+  ]
+}

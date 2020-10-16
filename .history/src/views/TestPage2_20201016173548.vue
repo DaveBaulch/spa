@@ -28,7 +28,7 @@ import AppCTA from "@/components/blocks/AppCTA.vue";
 import AppSectors from "@/components/blocks/appSectors/AppSectors.vue";
 
 export default {
-  name: "TestPage",
+  name: "Cards",
   components: {
     AppHero,
     AppText,

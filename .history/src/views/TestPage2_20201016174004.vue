@@ -6,13 +6,8 @@
       <h1>Card List</h1>
     </div>
 
-    <AppHero />
-    <AppText />
-    <AppSectors />
-    <AppCarousel />
-    <AppQuote />
-    <AppCardList />   
-    <AppCTA />
+    <component is="currentComponent" />
+
   </div>
 
 </template>
@@ -28,7 +23,7 @@ import AppCTA from "@/components/blocks/AppCTA.vue";
 import AppSectors from "@/components/blocks/appSectors/AppSectors.vue";
 
 export default {
-  name: "TestPage",
+  name: "TestPage2",
   components: {
     AppHero,
     AppText,
@@ -37,7 +32,14 @@ export default {
     AppQuote,
     AppCTA,
     AppSectors
-  }
+  },
+   data () {
+    return {
+      pageData: [
+        "AppQuote",
+        "AppCTA"
+      ]
+    } 
 };
 </script>
 
