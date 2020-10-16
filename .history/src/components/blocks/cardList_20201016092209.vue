@@ -33,6 +33,12 @@ import CardListCard from '@/components/ui/CardListCard.vue';
 
 export default {
   name: 'CardList', 
+  props: {
+    id: {
+      type: Number,
+      required: true
+    },
+  },     
   data () {
     return {
       blockData: null
