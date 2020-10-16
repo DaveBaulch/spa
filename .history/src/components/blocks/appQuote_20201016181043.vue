@@ -1,34 +1,18 @@
 <template>
-  <div class="section quote-block" v-if="blockData">
-    <div class="container">
-      <div class="row">
-        <blockquote class="quote">
-          <span v-html="blockData.text" class="quote__text"></span>
-          <cite>
-            <span v-if="hasAuthor" class="quote__author">{{ blockData.author }}</span>
-            <span v-if="hasComma">, </span>
-            <span v-if="hasJobTitle" class="quote__job-title">{{ blockData.jobTitle }}</span>
-          </cite>
-        </blockquote>
-      </div>
+<div class="section quote-block" v-if="blockData">
+  <div class="container">
+    <div class="row">
+      <blockquote class="quote">
+        <span v-html="blockData.text" class="quote__text"></span>
+        <cite>
+          <span v-if="hasAuthor" class="quote__author">{{ blockData.author }}</span>
+          <span v-if="hasComma">, </span>
+          <span v-if="hasJobTitle" class="quote__job-title">{{ blockData.jobTitle }}</span>
+        </cite>
+      </blockquote>
     </div>
   </div>
-
-  <!-- <div class="section quote-block">
-    <div class="container">
-      <div class="row">
-        <blockquote class="quote">
-          <span v-html="content.text" class="quote__text"></span>
-          <cite>
-            <span class="quote__author">{{ content.author }}</span>
-            <span>, </span>
-            <span class="quote__job-title">{{ content.jobTitle }}</span>
-          </cite>
-        </blockquote>
-      </div>
-    </div>
-  </div>  -->
-
+</div>
 </template>
 
 <script>
@@ -38,9 +22,9 @@ export default {
   name: 'AppBlock',
   props: {
     componentId: {
-      type: Number
+      type: Number,
+      content: Object
     },
-    content: Object
   },      
   data () {
     return {
@@ -66,8 +50,8 @@ export default {
       })
       .catch((error) => {
         console.log(error);
-      });  
-    }          
+      });            
+  }
 };
 </script>
 

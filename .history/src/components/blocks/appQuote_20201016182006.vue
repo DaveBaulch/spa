@@ -1,5 +1,5 @@
 <template>
-  <div class="section quote-block" v-if="blockData">
+  <!-- <div class="section quote-block" v-if="blockData">
     <div class="container">
       <div class="row">
         <blockquote class="quote">
@@ -12,9 +12,9 @@
         </blockquote>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- <div class="section quote-block">
+  <div class="section quote-block">
     <div class="container">
       <div class="row">
         <blockquote class="quote">
@@ -27,12 +27,11 @@
         </blockquote>
       </div>
     </div>
-  </div>  -->
-
+  </div> 
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'AppBlock',
@@ -46,28 +45,30 @@ export default {
     return {
       blockData: null
     }
-  },
-  computed: {
-    hasAuthor () {
-      return this.blockData.author != null
-    },
-    hasJobTitle () {
-      return this.blockData.jobTitle != null
-    },
-    hasComma () {
-      return this.blockData.author != null && this.blockData.jobTitle != null
-    }
-  },
-  created() {
-    axios
-      .get('data/quote-data.json')
-      .then((response) => {
-        this.blockData = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });  
-    }          
+  }
+  // computed: {
+  //   hasAuthor () {
+  //     return this.blockData.author != null
+  //   },
+  //   hasJobTitle () {
+  //     return this.blockData.jobTitle != null
+  //   },
+  //   hasComma () {
+  //     return this.blockData.author != null && this.blockData.jobTitle != null
+  //   }
+  // },
+  // created() {
+    // if (!this.content) {
+    // axios
+    //   .get('data/quote-data.json')
+    //   .then((response) => {
+    //     this.blockData = response.data;
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });  
+    // }          
+  // }
 };
 </script>
 

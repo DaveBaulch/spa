@@ -13,26 +13,10 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="section quote-block">
-    <div class="container">
-      <div class="row">
-        <blockquote class="quote">
-          <span v-html="content.text" class="quote__text"></span>
-          <cite>
-            <span class="quote__author">{{ content.author }}</span>
-            <span>, </span>
-            <span class="quote__job-title">{{ content.jobTitle }}</span>
-          </cite>
-        </blockquote>
-      </div>
-    </div>
-  </div>  -->
-
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'AppBlock',
@@ -42,11 +26,11 @@ export default {
     },
     content: Object
   },      
-  data () {
-    return {
-      blockData: null
-    }
-  },
+  // data () {
+  //   return {
+  //     blockData: null
+  //   }
+  // },
   computed: {
     hasAuthor () {
       return this.blockData.author != null
@@ -59,15 +43,17 @@ export default {
     }
   },
   created() {
-    axios
-      .get('data/quote-data.json')
-      .then((response) => {
-        this.blockData = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });  
-    }          
+    // if (!this.content) {
+    // axios
+    //   .get('data/quote-data.json')
+    //   .then((response) => {
+    //     this.blockData = response.data;
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });  
+    // }          
+  }
 };
 </script>
 

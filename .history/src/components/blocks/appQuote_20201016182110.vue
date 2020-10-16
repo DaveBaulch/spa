@@ -46,7 +46,7 @@ export default {
     return {
       blockData: null
     }
-  },
+  }.
   computed: {
     hasAuthor () {
       return this.blockData.author != null
@@ -59,6 +59,7 @@ export default {
     }
   },
   created() {
+    if (!this.content) {
     axios
       .get('data/quote-data.json')
       .then((response) => {
@@ -68,6 +69,7 @@ export default {
         console.log(error);
       });  
     }          
+  }
 };
 </script>
 
