@@ -46,7 +46,7 @@ export default {
       footerData: null
     }
   },
-  created() {
+  mounted() {
     axios
       .get('data/footer-data.json')
       .then((response) => {

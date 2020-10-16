@@ -115,6 +115,7 @@
 </template>
 
 <script>
+// import axios from 'axios';
 import TheSocialSharing from '@/components/global/TheSocialSharing.vue';
 
 export default {
@@ -125,6 +126,21 @@ export default {
   props: {
     blockData: Object
   }
+  // data () {
+  //   return {
+  //     blockData: null
+  //   }
+  // },
+  // created() {
+  //   axios
+  //     .get('data/footer-data.json')
+  //     .then((response) => {
+  //       this.blockData = response.data;
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });            
+  // }
 };
 </script>
 

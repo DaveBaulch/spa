@@ -13,7 +13,7 @@
       <router-view />
     </main>
 
-    <TheFooter :blockData="blockData" />
+    <TheFooter :footerData="blockData" />
 
     <TheScrollTopButton>
       <img src="@/assets/images/svg/chevron-up-white.svg" />

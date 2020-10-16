@@ -13,7 +13,7 @@
       <router-view />
     </main>
 
-    <TheFooter :blockData="blockData" />
+    <TheFooter />
 
     <TheScrollTopButton>
       <img src="@/assets/images/svg/chevron-up-white.svg" />
@@ -46,16 +46,17 @@ export default {
       footerData: null
     }
   },
-  created() {
-    axios
-      .get('data/footer-data.json')
-      .then((response) => {
-        this.blockData = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });            
-    }
+,
+created() {
+  axios
+    .get('data/footer-data.json')
+    .then((response) => {
+      this.blockData = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });            
+  }
 };
 </script>
 
