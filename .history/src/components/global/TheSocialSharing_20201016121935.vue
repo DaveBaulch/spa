@@ -2,28 +2,28 @@
   <div class="social-links-wrapper">
     <h2 class="social-links-title">Follow Us</h2>
     <ul class="social-links">
-      <li class="social-links__item" v-if="socialLinks.twitterLink">
-        <TheSocialSharingItem :href="socialLinks.twitterLink">
+      <li class="social-links__item">
+        <TheSocialSharingItem>
           <img src="@/assets/images/svg/icon-footer-twitter.svg" width="20" height="16" alt="Twitter" />
           <span class="sr-only">Twitter</span>
         </TheSocialSharingItem>
       </li>
-      <li class="social-links__item" v-if="socialLinks.linkedinLink">
-        <TheSocialSharingItem :href="socialLinks.linkedinLink">
+      <li class="social-links__item">
+        <TheSocialSharingItem>
           <img src="@/assets/images/svg/icon-footer-linkedin.svg" width="21" height="21" alt="LinkedIn" />
           <span class="sr-only">LinkedIn</span>
         </TheSocialSharingItem>
       </li>
-      <li class="social-links__item" v-if="socialLinks.facebookLink">
-        <TheSocialSharingItem :href="socialLinks.facebookLink">
+      <li class="social-links__item">
+        <TheSocialSharingItem>
           <img src="@/assets/images/svg/icon-footer-facebook.svg" width="21" height="21" alt="Facebook" />
           <span class="sr-only">Facebook</span>
         </TheSocialSharingItem>
       </li>
-      <li class="social-links__item" v-if="socialLinks.youtubeLink">
-        <TheSocialSharingItem :href="socialLinks.youtubeLink">
+      <li class="social-links__item">
+        <TheSocialSharingItem :href="socialLinks.youtubeUrl">
           <img src="@/assets/images/svg/icon-footer-youtube.svg" width="22" height="16" alt="YouTube" />
-          <span class="sr-only">YouTube</span>
+          <span class="sr-only">You Tube</span>
         </TheSocialSharingItem>
       </li>
     </ul>

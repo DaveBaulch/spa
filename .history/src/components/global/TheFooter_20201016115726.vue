@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-wrapper" v-if="blockData">
+    <div class="footer-wrapper">
 
       <footer class="footer" id="footer" role="contentinfo">
 
@@ -82,7 +82,7 @@
 
           <div class="row">
 
-            <TheSocialSharing :socialLinks="blockData.socialLinks" />
+            <TheSocialSharing />
 
           </div>
 
@@ -100,7 +100,10 @@
             <div class="footer-links-wrapper">
 
               <ul class="footer-links">
-                <li class="footer-links__item" v-for="item in blockData.footerItems" :key="item.id"><router-link :to="item.link" class="footer-links__link">{{ item.title }}</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Accessibility</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Privacy Policy</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Site Map</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Cookies</router-link></li>
               </ul>
 
             </div>

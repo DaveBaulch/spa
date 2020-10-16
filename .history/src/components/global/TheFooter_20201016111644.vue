@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-wrapper" v-if="blockData">
+    <div class="footer-wrapper">
 
       <footer class="footer" id="footer" role="contentinfo">
 
@@ -18,12 +18,12 @@
 
                     <li class="footer-nav__item">
                       <img src="@/assets/images/svg/icon-phone.svg" class="footer-nav__item-icon" />
-                      <a :href="'tel:' + blockData.col1Phone" class="footer-nav__link">{{ blockData.col1Phone }}</a>
+                      <a href="tel:+44(0)3002774499" class="footer-nav__link">+ 44 (0) 300 277 44 99</a>
                     </li>
 
                     <li class="footer-nav__item">
                       <img src="@/assets/images/svg/icon-mail.svg" class="footer-nav__item-icon" />
-                      <a :href="'mailto:' + blockData.col1EmailAddress" class="footer-nav__link">{{ blockData.col1EmailText }}</a>
+                      <a href="mailto:" class="footer-nav__link">Email an enquiry</a>
                     </li>
 
                   </ul>
@@ -34,7 +34,13 @@
 
               <div class="footer__sub2">
               <h3>{{ blockData.col1Title2 }}</h3>
-                <div v-html="blockData.col1Address"></div>
+                Registered Office:<br>
+                Address line 1<br>
+                Address line 2<br>
+                Address line 3<br>
+                Address line 4<br>
+                Address line 5<br>
+                Address line 6<br>
               </div>
 
             </div>
@@ -82,7 +88,7 @@
 
           <div class="row">
 
-            <TheSocialSharing :socialLinks="blockData.socialLinks" />
+            <TheSocialSharing />
 
           </div>
 
@@ -94,13 +100,16 @@
           <div class="row">
 
             <div class="copyright-notice-wrapper">
-              <p class="copyright-notice" v-html="blockData.copyright"></p>
+              <p class="copyright-notice">&copy; Copyright Notice 2020</p>
             </div>
 
             <div class="footer-links-wrapper">
 
               <ul class="footer-links">
-                <li class="footer-links__item" v-for="item in blockData.footerItems" :key="item.id"><router-link :to="item.link" class="footer-links__link">{{ item.title }}</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Accessibility</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Privacy Policy</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Site Map</router-link></li>
+                <li class="footer-links__item"><router-link to="/" class="footer-links__link">Cookies</router-link></li>
               </ul>
 
             </div>

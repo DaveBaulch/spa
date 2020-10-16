@@ -1,0 +1,11 @@
+{
+  "col2Title": "Contact Us",
+  "col2Items":[
+    {
+      "link1": {
+        "title": "Nav item 1",
+        "link": "/"
+      }
+    }   
+  ]
+}

@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-wrapper" v-if="blockData">
+    <div class="footer-wrapper">
 
       <footer class="footer" id="footer" role="contentinfo">
 

@@ -1,0 +1,72 @@
+{ "col1Title1": "Contact Us",
+  "col1Title2": "Our Location",
+  "col2Title": "Contact Us",
+  "col2Items":[
+      {
+        "id": 1,
+        "title": "Nav item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav item 4",
+        "link": "/"
+      }          
+  ],
+  "col3Title": "Our Work",
+  "col3Items":[
+      {
+        "id": 1,
+        "title": "Nav 2 item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav 2 item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav 2 item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav 2 item 4",
+        "link": "/"
+      }          
+  ],
+  "col4Title": "Links",
+  "col4Items":[
+      {
+        "id": 1,
+        "title": "Nav 3 item 1",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "Nav 3 item 2",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Nav 3 item 3",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Nav 3 item 4",
+        "link": "/"
+      }          
+  ]
+}

@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-wrapper" v-if="blockData">
+    <div class="footer-wrapper">
 
       <footer class="footer" id="footer" role="contentinfo">
 
@@ -82,7 +82,7 @@
 
           <div class="row">
 
-            <TheSocialSharing :socialLinks="blockData.socialLinks" />
+            <TheSocialSharing :socialLinks="blockData.socialLinks"></TheSocialSharing>
 
           </div>
 

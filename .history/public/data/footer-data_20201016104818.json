@@ -2,7 +2,7 @@
   "title": "Cards list title",
   "data":[
     {
-      "id": 1,
+      "id": "1",
       "tag": "Tag 1",
       "tagClass": "news",
       "link": "/",
@@ -12,7 +12,7 @@
       "date": "9/10/2019"
     },
     {
-      "id": 2,
+      "id": "2",
       "tag": "Tag 2",
       "tagClass": "work",
       "link": "/",
@@ -22,7 +22,7 @@
       "date": "10/10/2019"
     },
     {
-      "id": 3,
+      "id": "3",
       "tag": null,
       "tagClass": null,
       "link": "/",
@@ -32,7 +32,7 @@
       "date": "11/10/2019"
     },
     {
-      "id": 4,
+      "id": "4",
       "tag": "Tag 3",
       "tagClass": "case-study",
       "link": "/",
@@ -42,7 +42,7 @@
       "date": "12/10/2019"
     },
     {
-      "id": 5,
+      "id": "5",
       "tag": null,
       "tagClass": null,
       "link": "/",
@@ -52,7 +52,7 @@
       "date": "13/10/2019"
     },
     {
-      "id": 6,
+      "id": "6",
       "tag": null,
       "tagClass": null,
       "link": "/",
@@ -62,7 +62,7 @@
       "date": "14/10/2019"
     },
     {
-      "id": 7,
+      "id": "7",
       "tag": null,
       "tagClass": null,
       "link": "/",
@@ -72,7 +72,7 @@
       "date": "15/10/2019"
     },
     {
-      "id": 8,
+      "id": "8",
       "tag": null,
       "tagClass": null,
       "link": "/",

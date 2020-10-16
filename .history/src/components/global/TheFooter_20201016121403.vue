@@ -82,7 +82,7 @@
 
           <div class="row">
 
-            <TheSocialSharing :socialLinks="blockData.socialLinks" />
+            <!-- <TheSocialSharing :socialLinks="blockData.socialLinks"></TheSocialSharing> -->
 
           </div>
 
