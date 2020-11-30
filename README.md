@@ -1,5 +1,3 @@
-# dsa
-
 ## Project setup
 ```
 npm install
